@@ -88,3 +88,18 @@ Segurança da área administrativa:
 - senha somente por variável de ambiente.
 
 O arquivo `.gitignore` impede o envio acidental de `.env` e bancos SQLite ao GitHub.
+
+## Atualização mobile v2
+
+- controles + / − ampliados em telas pequenas;
+- orientação mobile específica para navegação no mapa;
+- resultados da busca agora possuem `TENHO INTERESSE`;
+- o botão da busca abre diretamente o fluxo de matrícula para a cidade escolhida;
+- tocar no nome da cidade continua apenas localizando-a no mapa.
+
+## Atualização mobile v3
+
+- em telas de até 700 px, o ranking `CIDADES MAIS ESCOLHIDAS` aparece no fluxo da página abaixo do mapa;
+- desktop mantém o ranking flutuante à esquerda;
+- botão `VER TODAS AS ESCOLHAS` permanece disponível no mobile;
+- melhorias mobile v2 da busca e dos controles de zoom foram preservadas.

@@ -425,6 +425,30 @@ body.detail-open main{
   margin:7px 2px 0;color:#686b70;font-size:10px;line-height:1.4;
 }
 
+
+.city-result-main{min-width:0;display:flex;flex:1;align-items:center;justify-content:space-between;gap:12px}
+.city-result-interest{
+  flex:0 0 auto;border:1px solid rgba(200,162,74,.55);background:rgba(200,162,74,.08);
+  color:#C8A24A;border-radius:7px;padding:8px 10px;font-size:9px;font-weight:900;
+  letter-spacing:.045em;cursor:pointer;white-space:nowrap;
+}
+.city-result-interest:hover{background:#C8A24A;color:#08090a}
+@media(max-width:700px){
+  #stage{min-height:58vh;height:58vh;touch-action:none}
+  #zoom{left:12px;bottom:12px;border-radius:12px}
+  #zoom button{width:48px;height:48px;font-size:27px;font-weight:700;touch-action:manipulation}
+  .pcce-zoom-hint{font-size:10px!important;max-width:180px;line-height:1.3}
+  .city-search-results{max-height:310px}
+  .city-result{align-items:stretch;gap:9px;padding:10px}
+  .city-result-main{align-items:flex-start;flex-direction:column;justify-content:center;gap:3px}
+  .city-result-type{text-align:left}
+  .city-result-interest{min-height:42px;padding:8px 11px}
+  .city-search-help{font-size:10px}
+}
+
+.mobile-zoom-help{display:none}
+@media(max-width:700px){.desktop-zoom-help{display:none}.mobile-zoom-help{display:inline}}
+
 /* Destaque temporário da cidade encontrada */
 .pin.search-target{
   z-index:999!important;
@@ -684,6 +708,47 @@ body.pcce-overlay-open .pcce-ranking{opacity:0;visibility:hidden;pointer-events:
  .pcce-info-overlay{padding:12px}.pcce-info-card{padding:22px 18px;max-height:88vh}
 }
 
+
+@media(max-width:700px){
+  .pcce-ranking{
+    display:block;
+    position:relative;
+    left:auto;
+    right:auto;
+    top:auto;
+    width:calc(100% - 24px);
+    max-width:none;
+    max-height:none;
+    margin:18px auto 26px;
+    padding:16px 14px;
+    opacity:1;
+    visibility:visible;
+    transform:none;
+    z-index:20;
+    overflow:visible;
+  }
+  .pcce-ranking-title{font-size:17px;margin-bottom:10px}
+  .pcce-ranking-list{gap:3px}
+  .pcce-ranking-row{grid-template-columns:27px minmax(0,1fr) auto;padding:10px 6px}
+  .pcce-ranking-city{font-size:12px}
+  .pcce-ranking-count{font-size:11px}
+  .pcce-ranking-all{min-height:44px;margin-top:14px}
+  /* Enquanto um painel/modal está aberto, pode ocultar; ao fechar volta ao fluxo abaixo do mapa. */
+  body.detail-open .pcce-ranking,
+  body.pcce-matricula-open .pcce-ranking,
+  body.pcce-overlay-open .pcce-ranking{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+  }
+  body:not(.detail-open):not(.pcce-matricula-open):not(.pcce-overlay-open) .pcce-ranking{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:none;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -714,11 +779,11 @@ body.pcce-overlay-open .pcce-ranking{opacity:0;visibility:hidden;pointer-events:
       <button class="city-search-clear" id="citySearchClear" type="button" aria-label="Limpar pesquisa">×</button>
     </div>
     <div class="city-search-results" id="citySearchResults" role="listbox"></div>
-    <div class="city-search-help">Selecione uma cidade para localizá-la no mapa. Depois, clique no brasão para escolher a lotação.</div>
+    <div class="city-search-help">Toque na cidade para localizá-la no mapa ou use “TENHO INTERESSE” para registrar sua escolha diretamente.</div>
   </div>
 </section>
 
-<div id="stage"><div class="pcce-zoom-hint">Ctrl + rolagem: zoom</div>
+<div id="stage"><div class="pcce-zoom-hint"><span class="desktop-zoom-help">Ctrl + rolagem: zoom</span><span class="mobile-zoom-help">Arraste o mapa e use + / − para aproximar</span></div>
 
 <svg id="svg"><g id="vp"><path id="ceara"/><g id="muns"></g></g></svg>
   <div id="layer"></div>
@@ -1302,14 +1367,32 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     current.slice(0,10).forEach((d)=>{
-      const btn=document.createElement('button');
-      btn.type='button';
-      btn.className='city-result';
-      btn.innerHTML='<span class="city-result-name"></span><span class="city-result-type"></span>';
-      btn.querySelector('.city-result-name').textContent=d.cidade;
-      btn.querySelector('.city-result-type').textContent=d.tipo||'Unidade PCCE';
-      btn.addEventListener('click',()=>localizarNoMapa(d));
-      results.appendChild(btn);
+      const row=document.createElement('div');
+      row.className='city-result';
+      row.setAttribute('role','option');
+
+      const main=document.createElement('button');
+      main.type='button';
+      main.className='city-result-main';
+      main.style.cssText='border:0;background:transparent;text-align:left;cursor:pointer;color:inherit;padding:0';
+      main.innerHTML='<span class="city-result-name"></span><span class="city-result-type"></span>';
+      main.querySelector('.city-result-name').textContent=d.cidade;
+      main.querySelector('.city-result-type').textContent=d.tipo||'Unidade PCCE';
+      main.addEventListener('click',()=>localizarNoMapa(d));
+
+      const interest=document.createElement('button');
+      interest.type='button';
+      interest.className='city-result-interest';
+      interest.textContent='TENHO INTERESSE';
+      interest.setAttribute('aria-label','Tenho interesse em '+d.cidade);
+      interest.addEventListener('click',(e)=>{
+        e.preventDefault();
+        e.stopPropagation();
+        escolherPelaBusca(d);
+      });
+
+      row.append(main,interest);
+      results.appendChild(row);
     });
     results.classList.add('open');
   }
@@ -1356,6 +1439,21 @@ document.addEventListener('DOMContentLoaded', function(){
 
       window.setTimeout(()=>marker.remove(),5500);
     }catch(e){}
+  }
+
+  function escolherPelaBusca(d){
+    searchInput.value=d.cidade;
+    clearBtn.classList.add('visible');
+    fecharResultados();
+    try{
+      /* Usa a mesma seleção do brasão para manter cidade/tipo/detalhes sincronizados. */
+      if(typeof selecionar==='function') selecionar(d);
+      /* Abre diretamente o mesmo fluxo de matrícula do botão do painel. */
+      const interesse=document.getElementById('interestBtn');
+      if(interesse) interesse.click();
+    }catch(e){
+      localizarNoMapa(d);
+    }
   }
 
   function localizarNoMapa(d){
