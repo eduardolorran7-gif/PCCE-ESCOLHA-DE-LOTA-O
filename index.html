@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cidades com unidades da Polícia Civil do Ceará – Mapa de lotação</title>
+<style>
+  :root{--brasao:url(data:image/png;base64,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);--ouro:#C8A24A;--ouro-claro:#f1d98a;--borda:rgba(212,175,55,.35)}
+  html,body{margin:0;height:100%;background:#000;color:var(--ouro);font-family:Inter,system-ui,sans-serif;overflow:hidden}
+  #stage{position:absolute;inset:0;background:#000;touch-action:none;cursor:grab}
+  #stage.arrasto{cursor:grabbing}
+  #svg{position:absolute;inset:0;width:100%;height:100%}
+  #ceara{fill:#0e0e0e;stroke:var(--ouro);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round;
+         filter:drop-shadow(0 0 10px rgba(212,175,55,.35))}
+  .mun{fill:transparent;stroke:rgba(212,175,55,.5);stroke-width:.8;vector-effect:non-scaling-stroke;stroke-linejoin:round;pointer-events:all}
+  .mun:hover{fill:rgba(212,175,55,.10)}
+  .lbl{position:absolute;transform:translate(-50%,-50%);font-size:11px;color:var(--ouro);opacity:.85;white-space:nowrap;
+       text-shadow:0 0 4px #000,0 0 4px #000,0 0 6px #000;pointer-events:none}
+  #status{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font-size:12px;opacity:.7;z-index:5;pointer-events:none}
+  #layer{position:absolute;inset:0;pointer-events:none}
+  .pin,.cl{position:absolute;pointer-events:auto;cursor:pointer;background:var(--brasao) center/contain no-repeat;
+           filter:drop-shadow(0 0 5px rgba(212,175,55,.55));transition:transform .15s,filter .15s}
+  .pin{width:30px;height:39px;margin:-20px 0 0 -15px}
+  .pin:hover,.pin.on{transform:scale(1.35);filter:drop-shadow(0 0 9px rgba(241,217,138,.95))}
+  .dlbl{position:absolute;transform:translate(-50%,-100%);width:max-content;max-width:150px;text-align:center;font-size:11px;
+        font-weight:600;line-height:14px;color:var(--ouro-claro);text-shadow:0 0 4px #000,0 0 4px #000,0 0 7px #000;pointer-events:none}
+  .cl{width:38px;height:50px;margin:-25px 0 0 -19px}
+  .cl:hover{filter:drop-shadow(0 0 9px rgba(241,217,138,.95))}
+  .cl b{position:absolute;right:-9px;bottom:-3px;min-width:20px;height:20px;padding:0 5px;box-sizing:border-box;border-radius:10px;
+        background:#000;border:1.5px solid var(--ouro);color:var(--ouro);font-size:11px;font-weight:600;display:flex;align-items:center;justify-content:center}
+  #tip{position:absolute;pointer-events:none;display:none;background:#000;border:1px solid var(--borda);border-radius:8px;
+       padding:6px 10px;font-size:12px;line-height:1.4;transform:translate(-50%,-100%);margin-top:-26px;white-space:nowrap;z-index:5}
+  #zoom{position:absolute;left:16px;bottom:16px;display:flex;flex-direction:column;border:1px solid var(--borda);border-radius:10px;overflow:hidden;z-index:5}
+  #zoom button{width:36px;height:36px;border:0;background:#000;color:var(--ouro);font-size:20px;cursor:pointer}
+  #zoom button+button{border-top:1px solid var(--borda)}
+  #zoom button:hover{background:#1a1500;color:var(--ouro-claro)}
+
+  #previa{position:absolute;right:20px;bottom:20px;width:400px;max-width:calc(100% - 40px);background:#0a0a0a;
+          border:1px solid var(--borda);border-radius:16px;box-shadow:0 10px 40px #000,0 0 24px rgba(212,175,55,.12);
+          z-index:10;display:none;overflow:hidden}
+  #previa header{display:flex;justify-content:space-between;gap:10px;padding:14px 16px}
+  #previa h2{font-size:14px;font-weight:600;margin:0}
+  #previa p{font-size:12px;margin:3px 0 0;opacity:.7}
+  #fechar{border:0;background:none;color:var(--ouro);font-size:22px;line-height:1;cursor:pointer}
+  #fechar:hover{color:var(--ouro-claro)}
+  #pInfo{padding:0 16px 12px;font-size:12px;line-height:1.6;color:var(--ouro-claro)}
+  #pInfo a,#pLink{color:var(--ouro);text-decoration:none}
+  #pInfo a:hover,#pLink:hover{color:var(--ouro-claro);text-decoration:underline}
+  #previa iframe{width:100%;height:240px;border:0;display:block;filter:invert(92%) hue-rotate(180deg)}
+  #pLink{display:block;padding:12px 16px;font-size:13px;border-top:1px solid var(--borda)}
+  @media(max-width:600px){#previa{right:10px;bottom:10px;max-width:calc(100% - 20px)}}
+
+    .pcce-hero{
+      position:relative;
+      z-index:20;
+      text-align:center;
+      padding:28px 20px 20px;
+      background:linear-gradient(180deg,rgba(8,8,8,.98),rgba(15,15,15,.92));
+      border-bottom:1px solid rgba(200,162,74,.34);
+      box-shadow:0 12px 30px rgba(0,0,0,.28);
+    }
+    .pcce-hero::after{
+      content:"";
+      display:block;
+      width:min(520px,72vw);
+      height:1px;
+      margin:18px auto 0;
+      background:linear-gradient(90deg,transparent,#C8A24A,transparent);
+      opacity:.8;
+    }
+    .pcce-title{
+      margin:0;
+      color:#C8A24A;
+      font-family:Inter,Segoe UI,Arial,sans-serif;
+      font-size:clamp(25px,3vw,43px);
+      line-height:1.05;
+      font-weight:800;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      text-shadow:0 0 22px rgba(200,162,74,.13);
+    }
+    .pcce-subtitle{
+      margin:10px 0 0;
+      color:#C8A24A;
+      font-family:Inter,Segoe UI,Arial,sans-serif;
+      font-size:clamp(14px,1.5vw,20px);
+      font-weight:400;
+      letter-spacing:.28em;
+      text-transform:uppercase;
+      opacity:.88;
+    }
+
+
+    button,.btn{border-color:rgba(200,162,74,.58);}
+    button:hover,.btn:hover{border-color:#C8A24A;box-shadow:0 0 0 1px rgba(200,162,74,.16),0 8px 24px rgba(0,0,0,.22);}
+    a{color:#C8A24A;}
+    input:focus,select:focus{border-color:#C8A24A!important;outline:none;box-shadow:0 0 0 2px rgba(200,162,74,.12);}
+
+
+/* Painel de seleção de lotação */
+#detailPanel{
+  position:fixed;
+  top:0;
+  right:0;
+  width:min(420px,38vw);
+  height:100vh;
+  box-sizing:border-box;
+  z-index:1000;
+  padding:34px 30px;
+  background:linear-gradient(180deg,rgba(13,13,13,.99),rgba(7,7,7,.99));
+  border-left:1px solid rgba(200,162,74,.42);
+  box-shadow:-18px 0 44px rgba(0,0,0,.34);
+  transform:translateX(102%);
+  transition:transform .32s cubic-bezier(.2,.8,.2,1);
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+}
+body.detail-open #detailPanel{transform:translateX(0)}
+body.detail-open .pcce-hero,
+body.detail-open #stage,
+body.detail-open .stage,
+body.detail-open main{
+  margin-right:min(420px,38vw);
+  transition:margin-right .32s cubic-bezier(.2,.8,.2,1);
+}
+.detail-close{
+  position:absolute;top:18px;right:18px;
+  width:38px;height:38px;border-radius:50%;
+  border:1px solid rgba(200,162,74,.38);
+  background:#111;color:#C8A24A;
+  font-size:22px;line-height:1;cursor:pointer;
+}
+.detail-eyebrow{
+  margin-top:38px;color:#C8A24A;font-size:11px;font-weight:800;
+  letter-spacing:.22em;text-transform:uppercase;
+}
+.detail-city{
+  margin:10px 0 8px;color:#C8A24A;
+  font-size:clamp(27px,3vw,40px);line-height:1.05;font-weight:800;
+}
+.detail-rule{
+  width:72px;height:2px;background:#C8A24A;margin:14px 0 25px;
+}
+.detail-label{
+  margin-top:18px;color:#888;font-size:10px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;
+}
+.detail-value{
+  margin-top:6px;color:#eee;font-size:15px;line-height:1.55;
+}
+.detail-note{
+  margin-top:24px;padding:14px 15px;border:1px solid rgba(200,162,74,.18);
+  background:rgba(200,162,74,.05);color:#aaa;font-size:12px;line-height:1.5;
+}
+.interest-btn{
+  margin-top:auto;padding:16px 20px;border:1px solid #C8A24A;
+  background:#C8A24A;color:#0b0b0b;font-weight:900;font-size:13px;
+  letter-spacing:.14em;text-transform:uppercase;cursor:pointer;
+  transition:.2s ease;
+}
+.interest-btn:hover{filter:brightness(1.08);transform:translateY(-1px);box-shadow:0 8px 26px rgba(200,162,74,.18)}
+.interest-btn.selected{background:transparent;color:#C8A24A}
+@media(max-width:820px){
+  #detailPanel{width:100%;height:48vh;top:auto;bottom:0;border-left:0;border-top:1px solid rgba(200,162,74,.42);
+    transform:translateY(102%);padding:24px 22px}
+  body.detail-open #detailPanel{transform:translateY(0)}
+  body.detail-open .pcce-hero,body.detail-open #stage,body.detail-open .stage,body.detail-open main{margin-right:0}
+  .detail-eyebrow{margin-top:20px}.detail-city{font-size:28px}
+}
+
+
+/* Modal de matrícula */
+#matriculaModal{
+  position:fixed;inset:0;z-index:2200;
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;background:rgba(0,0,0,.72);
+  backdrop-filter:blur(5px);
+  opacity:0;visibility:hidden;transition:.22s ease;
+}
+#matriculaModal.open{opacity:1;visibility:visible}
+.matricula-card{
+  width:min(440px,92vw);box-sizing:border-box;
+  background:linear-gradient(180deg,#151515,#0b0b0b);
+  border:1px solid rgba(200,162,74,.48);
+  box-shadow:0 24px 70px rgba(0,0,0,.58);
+  padding:30px;
+}
+.matricula-kicker{
+  color:#C8A24A;font-size:10px;font-weight:900;
+  letter-spacing:.22em;text-transform:uppercase;
+}
+.matricula-title{
+  color:#C8A24A;font-size:25px;font-weight:800;
+  margin:8px 0 6px;
+}
+.matricula-city{color:#aaa;font-size:13px;margin-bottom:24px}
+.matricula-label{
+  display:block;color:#ddd;font-size:12px;font-weight:700;
+  margin-bottom:8px;
+}
+#matriculaInput{
+  width:100%;box-sizing:border-box;padding:14px 15px;
+  border:1px solid rgba(200,162,74,.34);background:#090909;
+  color:#fff;font-size:17px;letter-spacing:.06em;
+}
+#matriculaInput:focus{
+  border-color:#C8A24A;outline:none;
+  box-shadow:0 0 0 2px rgba(200,162,74,.11);
+}
+.matricula-help{color:#777;font-size:11px;line-height:1.45;margin-top:8px}
+.matricula-error{min-height:17px;color:#d9b65d;font-size:11px;margin-top:7px}
+.matricula-actions{display:flex;gap:10px;margin-top:22px}
+.matricula-actions button{
+  flex:1;padding:13px 14px;cursor:pointer;font-weight:800;
+  letter-spacing:.08em;text-transform:uppercase;
+}
+#matriculaCancel{
+  background:transparent;color:#aaa;border:1px solid #333;
+}
+#matriculaConfirm{
+  background:#C8A24A;color:#0b0b0b;border:1px solid #C8A24A;
+}
+
+
+/* ===== Layout refinado: cabeçalho fora do mapa + fundo minimalista ===== */
+html,body{
+  margin:0;
+  min-height:100%;
+  background:#090a0b;
+}
+body{
+  min-height:100vh;
+  overflow:hidden;
+  color:#eee;
+  background:
+    radial-gradient(circle at 18% 12%,rgba(200,162,74,.055),transparent 27%),
+    radial-gradient(circle at 84% 82%,rgba(255,255,255,.025),transparent 24%),
+    linear-gradient(145deg,#0d0e10 0%,#08090a 54%,#0b0c0e 100%);
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.18;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px);
+  background-size:42px 42px;
+  mask-image:linear-gradient(to bottom,transparent,black 18%,black 82%,transparent);
+}
+
+/* O cabeçalho agora participa do fluxo da página e nunca cobre o mapa. */
+.pcce-hero{
+  position:relative !important;
+  top:auto !important;
+  left:auto !important;
+  right:auto !important;
+  width:100%;
+  box-sizing:border-box;
+  z-index:30;
+  flex:0 0 auto;
+  padding:22px 24px 18px;
+  background:rgba(10,11,12,.84);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(200,162,74,.22);
+  box-shadow:0 10px 32px rgba(0,0,0,.18);
+}
+.pcce-hero::after{
+  width:min(440px,58vw);
+  margin-top:14px;
+  opacity:.56;
+}
+.pcce-title{
+  font-size:clamp(22px,2.45vw,36px);
+  letter-spacing:.16em;
+}
+.pcce-subtitle{
+  margin-top:8px;
+  font-size:clamp(11px,1.1vw,15px);
+  letter-spacing:.31em;
+}
+
+/* Estrutura vertical: cabeçalho em cima, mapa no espaço restante. */
+body{
+  display:flex;
+  flex-direction:column;
+}
+#stage,.stage,main{
+  position:relative;
+  z-index:1;
+  flex:1 1 auto;
+  min-height:0;
+}
+
+/* Se o stage usava altura da viewport inteira, passa a respeitar o espaço disponível. */
+#stage{
+  height:auto !important;
+  min-height:0 !important;
+}
+
+/* Superfícies e controles mais discretos. */
+.panel,.card,.controls,.toolbar{
+  background:rgba(15,16,18,.82) !important;
+  border-color:rgba(200,162,74,.18) !important;
+  box-shadow:0 14px 38px rgba(0,0,0,.20) !important;
+  backdrop-filter:blur(12px);
+}
+button,.btn,input,select{
+  border-radius:8px;
+}
+button,.btn{
+  transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease;
+}
+
+/* Painel de detalhes começa abaixo do cabeçalho no desktop. */
+#detailPanel{
+  top:var(--pcce-header-height,0px);
+  height:calc(100vh - var(--pcce-header-height,0px));
+}
+
+/* Ao abrir detalhes, somente a área do mapa cede espaço; cabeçalho permanece inteiro. */
+body.detail-open .pcce-hero{
+  margin-right:0 !important;
+}
+body.detail-open #stage,
+body.detail-open .stage,
+body.detail-open main{
+  margin-right:min(420px,38vw);
+}
+
+@media(max-width:820px){
+  body{overflow:hidden}
+  .pcce-hero{padding:17px 16px 14px}
+  .pcce-title{font-size:20px;letter-spacing:.11em}
+  .pcce-subtitle{font-size:10px;letter-spacing:.23em}
+  #detailPanel{
+    top:auto;
+    height:48vh;
+  }
+  body.detail-open #stage,
+  body.detail-open .stage,
+  body.detail-open main{margin-right:0}
+}
+
+
+
+/* ===== Busca de lotação em seção própria, sem sobrepor o mapa ===== */
+.city-search-section{
+  position:relative;
+  z-index:20;
+  flex:0 0 auto;
+  width:100%;
+  box-sizing:border-box;
+  padding:14px 24px 16px;
+  background:rgba(11,12,14,.94);
+  border-bottom:1px solid rgba(255,255,255,.055);
+}
+.city-search-inner{
+  width:min(720px,100%);
+  margin:0 auto;
+}
+.city-search-label{
+  display:block;
+  margin:0 0 7px 2px;
+  color:#C8A24A;
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.20em;
+  text-transform:uppercase;
+}
+.city-search-box{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-height:46px;
+  padding:0 13px;
+  background:#111316;
+  border:1px solid rgba(200,162,74,.28);
+  border-radius:9px;
+}
+.city-search-icon{
+  width:18px;height:18px;flex:0 0 auto;color:#C8A24A;opacity:.9;
+}
+#citySearch{
+  flex:1;width:100%;
+  border:0!important;outline:0!important;box-shadow:none!important;
+  background:transparent!important;color:#f0f0f0;
+  padding:13px 0;font-size:13px;
+}
+#citySearch::placeholder{color:#686b70}
+.city-search-clear{
+  display:none;border:0;background:transparent;color:#777;
+  padding:3px 5px;font-size:20px;cursor:pointer;
+}
+.city-search-clear.visible{display:block}
+.city-search-results{
+  display:none;
+  max-height:220px;
+  overflow:auto;
+  margin-top:6px;
+  background:#111316;
+  border:1px solid rgba(200,162,74,.22);
+  border-radius:9px;
+  box-shadow:0 14px 32px rgba(0,0,0,.25);
+}
+.city-search-results.open{display:block}
+.city-result{
+  width:100%;display:flex;align-items:center;justify-content:space-between;
+  gap:14px;padding:11px 13px;border:0;border-bottom:1px solid rgba(255,255,255,.05);
+  border-radius:0;background:transparent;text-align:left;cursor:pointer;
+}
+.city-result:last-child{border-bottom:0}
+.city-result:hover,.city-result.active{background:rgba(200,162,74,.075);box-shadow:none;transform:none}
+.city-result-name{color:#eee;font-size:13px;font-weight:750}
+.city-result-type{
+  color:#C8A24A;font-size:9px;letter-spacing:.07em;text-transform:uppercase;
+  text-align:right;opacity:.75;
+}
+.city-no-result{padding:13px;color:#777;text-align:center;font-size:11px}
+.city-search-help{
+  margin:7px 2px 0;color:#686b70;font-size:10px;line-height:1.4;
+}
+
+/* Destaque temporário da cidade encontrada */
+.pin.search-target{
+  z-index:999!important;
+  filter:drop-shadow(0 0 8px rgba(200,162,74,.95)) drop-shadow(0 0 18px rgba(200,162,74,.65));
+  animation:pcceSearchPulse 1s ease-in-out 4;
+}
+@keyframes pcceSearchPulse{
+  0%,100%{transform:translate(-50%,-50%) scale(1)}
+  50%{transform:translate(-50%,-50%) scale(1.32)}
+}
+
+@media(max-width:820px){
+  .city-search-section{padding:10px 12px 12px}
+  .city-search-label{font-size:8px}
+  .city-search-box{min-height:43px}
+  #citySearch{font-size:12px;padding:11px 0}
+  .city-search-help{display:none}
+  .city-search-results{max-height:180px}
+}
+
+
+/* Permite a navegação vertical entre cabeçalho, busca e mapa */
+body{overflow-y:auto!important;overflow-x:hidden!important}
+#stage{flex:0 0 auto!important;height:calc(100vh - var(--pcce-header-height,100px) + 70px)!important;min-height:630px!important}
+@media(max-width:820px){
+  body{overflow-y:auto!important;overflow-x:hidden!important}
+  #stage{height:76vh!important;min-height:520px!important}
+}
+
+
+/* Destaque independente: não modifica o elemento do brasão */
+.pcce-search-highlight{
+  position:absolute;z-index:1450;width:76px;height:76px;
+  transform:translate(-50%,-50%);
+  border:3px solid #C8A24A;border-radius:50%;pointer-events:none;
+  box-shadow:0 0 0 8px rgba(200,162,74,.14),0 0 24px rgba(200,162,74,.95),0 0 48px rgba(200,162,74,.55);
+  animation:pcceSafePulse .9s ease-in-out infinite;
+}
+.pcce-search-highlight-label{
+  position:absolute;left:50%;bottom:calc(100% + 14px);transform:translateX(-50%);
+  padding:8px 13px;border:1px solid #C8A24A;border-radius:8px;
+  background:#090a0b;color:#C8A24A;font-size:12px;font-weight:900;
+  letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;
+  box-shadow:0 10px 28px rgba(0,0,0,.5);
+}
+@keyframes pcceSafePulse{0%,100%{scale:.9;opacity:.82}50%{scale:1.16;opacity:1}}
+
+
+/* ===== Viewport fechado do mapa do Ceará ===== */
+html,body{
+  width:100%;
+  max-width:100%;
+  overflow-x:hidden!important;
+}
+#stage{
+  position:relative!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  overflow:hidden!important;
+  overscroll-behavior:contain!important;
+  touch-action:none!important;
+  background:
+    radial-gradient(circle at 50% 46%,rgba(200,162,74,.035),transparent 34%),
+    linear-gradient(180deg,#0b0c0e,#08090a)!important;
+}
+#stage svg,
+#layer{
+  position:absolute;
+}
+
+/* Não permite que elementos internos aumentem a página. */
+#layer{
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  overflow:visible;
+  pointer-events:none;
+}
+#layer .pin,#layer button,#layer .pcce-search-highlight{pointer-events:auto}
+
+/* A página termina junto ao mapa. */
+body::after{display:none!important}
+
+
+/* ===== Rolagem vertical normal da página ===== */
+html{
+  overflow-y:auto!important;
+  scroll-behavior:smooth;
+}
+body{
+  overflow-y:visible!important;
+  overflow-x:hidden!important;
+  overscroll-behavior-y:auto!important;
+}
+#stage{
+  overscroll-behavior-y:auto!important;
+}
+/* A roda do mouse navega pela página; arrastar com o botão continua controlando o mapa. */
+
+
+/* ===== Cabeçalho institucional com brasão PCCE ===== */
+.pcce-header-brand-inner{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:13px;
+  max-width:100%;
+  vertical-align:middle;
+}
+.pcce-header-crest{
+  display:block;
+  flex:0 0 48px;
+  width:48px;
+  height:48px;
+  background-image:var(--brasao);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:contain;
+  filter:drop-shadow(0 3px 8px rgba(0,0,0,.35));
+}
+.pcce-header-brand-text{
+  display:block;
+  min-width:0;
+}
+header,
+.header,
+.topbar,
+.site-header{
+  box-sizing:border-box;
+}
+header .wrap,
+.header .wrap,
+.topbar .wrap,
+.site-header .wrap{
+  box-sizing:border-box;
+  text-align:center;
+}
+@media(max-width:680px){
+  .pcce-header-brand-inner{gap:9px}
+  .pcce-header-crest{
+    flex-basis:39px;
+    width:39px;
+    height:39px;
+  }
+  .pcce-header-brand-text{font-size:.94em}
+}
+
+
+.pcce-zoom-hint{
+  position:absolute;
+  right:16px;
+  bottom:14px;
+  z-index:1600;
+  padding:7px 10px;
+  border:1px solid rgba(200,162,74,.38);
+  border-radius:7px;
+  background:rgba(8,9,10,.82);
+  color:rgba(255,255,255,.68);
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.03em;
+  pointer-events:none;
+  backdrop-filter:blur(6px);
+}
+@media(max-width:680px){.pcce-zoom-hint{display:none}}
+
+
+/* ===== Ranking global de escolhas ===== */
+.pcce-ranking{
+  position:fixed;
+  left:18px;
+  right:auto;
+  top:calc(var(--pcce-header-height,100px) + 18px);
+  z-index:1650;
+  width:min(300px,calc(100vw - 36px));
+  max-height:calc(100vh - var(--pcce-header-height,100px) - 36px);
+  overflow:auto;
+  padding:16px;
+  box-sizing:border-box;
+  border:1px solid rgba(200,162,74,.32);
+  border-radius:12px;
+  background:rgba(9,10,11,.93);
+  box-shadow:0 18px 48px rgba(0,0,0,.38);
+  backdrop-filter:blur(10px);
+}
+.pcce-ranking-kicker{
+  color:#C8A24A;font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase;
+}
+.pcce-ranking-title{
+  margin:4px 0 12px;color:#f2f2f2;font-size:18px;font-weight:900;
+}
+.pcce-ranking-list{display:grid;gap:7px}
+.pcce-ranking-row{
+  display:grid;grid-template-columns:28px 1fr auto;gap:9px;align-items:center;
+  padding:9px 8px;border-bottom:1px solid rgba(255,255,255,.07);
+}
+.pcce-ranking-pos{color:#C8A24A;font-weight:900;font-size:12px}
+.pcce-ranking-city{color:#eee;font-weight:800;font-size:12px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pcce-ranking-count{color:#aaa;font-size:11px;font-weight:800}
+.pcce-ranking-empty{padding:12px 4px;color:#777;font-size:12px;line-height:1.45}
+.pcce-ranking-total{margin-top:11px;color:#777;font-size:10px;text-align:right}
+@media(max-width:1180px){
+  .pcce-ranking{position:relative;left:auto;right:auto;top:auto;width:min(720px,calc(100% - 28px));max-height:none;margin:14px auto 18px}
+}
+
+
+/* Ranking não disputa espaço com a escolha de cidade/matrícula. */
+body.detail-open .pcce-ranking,
+body.pcce-matricula-open .pcce-ranking{
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateX(-14px);
+}
+.pcce-ranking{
+  transition:opacity .18s ease,transform .18s ease,visibility .18s ease;
+}
+
+
+/* ===== Ações institucionais / modais informativos ===== */
+.pcce-header-actions{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:7px}
+.pcce-header-link{appearance:none;border:0;background:transparent;padding:2px 0;color:#C8A24A;font:800 10px/1.2 inherit;letter-spacing:.12em;cursor:pointer}
+.pcce-header-link:hover{text-decoration:underline;color:#e2c46d}
+.pcce-header-sep{color:rgba(200,162,74,.45);font-size:10px}
+.pcce-ranking-all{display:block;width:100%;margin-top:12px;padding:9px 8px;border:1px solid rgba(200,162,74,.38);border-radius:7px;background:transparent;color:#C8A24A;font-size:10px;font-weight:900;letter-spacing:.08em;cursor:pointer}
+.pcce-ranking-all:hover{background:rgba(200,162,74,.09)}
+.pcce-info-overlay{position:fixed;inset:0;z-index:5000;display:flex;align-items:center;justify-content:center;padding:22px;background:rgba(0,0,0,.78);backdrop-filter:blur(7px);opacity:0;visibility:hidden;pointer-events:none;transition:.18s ease}
+.pcce-info-overlay.open{opacity:1;visibility:visible;pointer-events:auto}
+.pcce-info-card{position:relative;width:min(650px,100%);max-height:min(82vh,760px);overflow:auto;box-sizing:border-box;padding:27px;border:1px solid rgba(200,162,74,.4);border-radius:13px;background:#0d0f10;box-shadow:0 28px 80px rgba(0,0,0,.58);color:#e9e9e9}
+.pcce-info-kicker{color:#C8A24A;font-size:10px;font-weight:900;letter-spacing:.16em}
+.pcce-info-card h2{margin:5px 0 18px;font-size:23px;letter-spacing:.04em;color:#fff}
+.pcce-info-card p,.pcce-howto{font-size:13px;line-height:1.65;color:#c8c8c8}
+.pcce-howto{margin-top:19px;padding-top:18px;border-top:1px solid rgba(255,255,255,.09)}
+.pcce-howto ol{margin:10px 0 0;padding-left:21px}
+.pcce-howto li{margin:9px 0}
+.pcce-aware-button{display:block;width:100%;margin-top:23px;padding:12px;border:1px solid #C8A24A;border-radius:7px;background:#C8A24A;color:#0a0b0c;font-weight:950;letter-spacing:.08em;cursor:pointer}
+.pcce-modal-close{position:absolute;right:15px;top:13px;width:32px;height:32px;border:0;background:transparent;color:#aaa;font-size:25px;cursor:pointer}
+.pcce-modal-close:hover{color:#fff}
+.pcce-modal-intro{margin-top:-7px!important}
+.pcce-full-ranking{margin-top:18px}
+.pcce-full-row{display:grid;grid-template-columns:38px 1fr auto;gap:10px;align-items:center;padding:11px 4px;border-bottom:1px solid rgba(255,255,255,.075)}
+.pcce-full-pos{font-weight:950;color:#C8A24A}
+.pcce-full-city{font-weight:800;color:#eee}
+.pcce-full-votes{font-size:11px;color:#999;font-weight:800}
+.pcce-news-card{width:min(780px,100%)}
+.pcce-news-list{display:grid;gap:9px;margin-top:18px}
+.pcce-news-item{display:block;padding:13px 14px;border:1px solid rgba(255,255,255,.09);border-radius:8px;background:rgba(255,255,255,.025);text-decoration:none}
+.pcce-news-item:hover{border-color:rgba(200,162,74,.45);background:rgba(200,162,74,.055)}
+.pcce-news-title{color:#eee;font-size:13px;font-weight:850;line-height:1.4}
+.pcce-news-meta{margin-top:6px;color:#8c8c8c;font-size:10px}
+.pcce-news-source{margin-top:15px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);color:#777;font-size:10px}
+.pcce-modal-loading{padding:22px 0;color:#888;font-size:12px;text-align:center}
+body.pcce-overlay-open{overflow:hidden!important}
+body.pcce-overlay-open .pcce-ranking{opacity:0;visibility:hidden;pointer-events:none}
+@media(max-width:680px){
+ .pcce-header-actions{margin-top:6px;gap:7px}.pcce-header-link{font-size:9px}
+ .pcce-info-overlay{padding:12px}.pcce-info-card{padding:22px 18px;max-height:88vh}
+}
+
+</style>
+</head>
+<body>
+
+<div class="pcce-hero">
+  <h1 class="pcce-title"><span class="pcce-header-brand-inner"><span class="pcce-header-crest" aria-hidden="true"></span><span class="pcce-header-brand-text">POLÍCIA CIVIL DO CEARÁ</span></span></h1>
+  <div class="pcce-subtitle">ESCOLHA DE LOTAÇÃO - NOVOS POLICIAIS CIVIS</div>
+<div class="pcce-header-actions">
+  <button type="button" id="pcceStepButton" class="pcce-header-link">PASSO A PASSO</button>
+</div>
+
+</div>
+
+
+<section class="city-search-section" id="citySearchSection" aria-label="Pesquisar lotação">
+  <div class="city-search-inner" id="citySearchWrap">
+    <label class="city-search-label" for="citySearch">Localizar cidade no mapa</label>
+    <div class="city-search-box">
+      <svg class="city-search-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M16.5 16.5 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <input id="citySearch" type="text" autocomplete="off"
+             placeholder="Digite o nome da cidade..."
+             aria-label="Pesquisar cidade para lotação"
+             aria-autocomplete="list"
+             aria-controls="citySearchResults">
+      <button class="city-search-clear" id="citySearchClear" type="button" aria-label="Limpar pesquisa">×</button>
+    </div>
+    <div class="city-search-results" id="citySearchResults" role="listbox"></div>
+    <div class="city-search-help">Selecione uma cidade para localizá-la no mapa. Depois, clique no brasão para escolher a lotação.</div>
+  </div>
+</section>
+
+<div id="stage"><div class="pcce-zoom-hint">Ctrl + rolagem: zoom</div>
+
+<svg id="svg"><g id="vp"><path id="ceara"/><g id="muns"></g></g></svg>
+  <div id="layer"></div>
+  <div id="tip"></div>
+  <div id="status">Carregando municípios…</div>
+  <div id="zoom"><button id="mais" aria-label="Aproximar">+</button><button id="menos" aria-label="Afastar">−</button></div>
+</div>
+<div id="previa">
+  <header>
+    <div><h2 id="pNome"></h2><p id="pCidade"></p></div>
+    <button id="fechar" aria-label="Fechar">×</button>
+  </header>
+  <div id="pInfo"></div>
+  <iframe id="pFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Prévia do Google Maps"></iframe>
+  <a id="pLink" target="_blank" rel="noopener">Abrir no Google Maps ↗</a>
+</div>
+
+<script>
+/* Versão sem bibliotecas externas: o mapa é desenhado em SVG, então funciona em qualquer pré-visualização.
+   Fortaleza e Caucaia (1ª DP): dados oficiais; marcador de Fortaleza aproximado (bairro).
+   Demais cidades: entradas provisórias (centro da cidade). */
+const delegacias = [
+  {nome:"Acaraú", cidade:"Acaraú", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Acaraú, Ceará", lat:-2.885, lng:-40.12},
+  {nome:"Acopiara", cidade:"Acopiara", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Acopiara, Ceará", lat:-6.0900382, lng:-39.4553804},
+  {nome:"Alto Santo", cidade:"Alto Santo", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Alto Santo, Ceará", lat:-5.5187398, lng:-38.2722124},
+  {nome:"Amontada", cidade:"Amontada", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Amontada, Ceará", lat:-3.36, lng:-39.831},
+  {nome:"Aquiraz", cidade:"Aquiraz", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Aquiraz, Ceará", lat:-3.9005912, lng:-38.3758357},
+  {nome:"Aracati", cidade:"Aracati", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Aracati, Ceará", lat:-4.5583, lng:-37.7678},
+  {nome:"Aracoiaba", cidade:"Aracoiaba", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Aracoiaba, Ceará", lat:-4.3704675, lng:-38.8085546},
+  {nome:"Araripe", cidade:"Araripe", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Araripe, Ceará", lat:-7.2062637, lng:-40.1336842},
+  {nome:"Assaré", cidade:"Assaré", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Assaré, Ceará", lat:-6.8774142, lng:-39.8739499},
+  {nome:"Aurora", cidade:"Aurora", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Aurora, Ceará", lat:-6.943, lng:-38.967},
+  {nome:"Banabuiú", cidade:"Banabuiú", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Banabuiú, Ceará", lat:-5.3111069, lng:-38.9183271},
+  {nome:"Barbalha", cidade:"Barbalha", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Barbalha, Ceará", lat:-7.3119791, lng:-39.3000185},
+  {nome:"Barreira", cidade:"Barreira", tipo:"Unidade Policial", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Barreira, Ceará", lat:-4.289, lng:-38.642},
+  {nome:"Baturité", cidade:"Baturité", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Baturité, Ceará", lat:-4.329, lng:-38.884},
+  {nome:"Beberibe", cidade:"Beberibe", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Beberibe, Ceará", lat:-4.1850219, lng:-38.12659835},
+  {nome:"Bela Cruz", cidade:"Bela Cruz", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Bela Cruz, Ceará", lat:-3.0569348, lng:-40.1703202},
+  {nome:"Boa Viagem", cidade:"Boa Viagem", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Boa Viagem, Ceará", lat:-5.1251127, lng:-39.7312353},
+  {nome:"Brejo Santo", cidade:"Brejo Santo", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Brejo Santo, Ceará", lat:-7.493, lng:-38.987},
+  {nome:"Camocim", cidade:"Camocim", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Camocim, Ceará", lat:-2.9006, lng:-40.8553},
+  {nome:"Campo Sales", cidade:"Campo Sales", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Campo Sales, Ceará", lat:-7.0718526, lng:-40.368682},
+  {nome:"Canindé", cidade:"Canindé", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Canindé, Ceará", lat:-4.3589, lng:-39.3117},
+  {nome:"Caririaçu", cidade:"Caririaçu", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Caririaçu, Ceará", lat:-7.0464842, lng:-39.2860524},
+  {nome:"Cascavel", cidade:"Cascavel", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Cascavel, Ceará", lat:-4.1394532, lng:-38.2420717},
+  {nome:"Caucaia", cidade:"Caucaia", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Caucaia, Ceará", lat:-3.733, lng:-38.657},
+  {nome:"Cedro", cidade:"Cedro", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Cedro, Ceará", lat:-6.6055882, lng:-39.0587786},
+  {nome:"Chaval", cidade:"Chaval", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Chaval, Ceará", lat:-3.0320344, lng:-41.2393755},
+  {nome:"Chorozinho", cidade:"Chorozinho", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Chorozinho, Ceará", lat:-4.2944707, lng:-38.4978961},
+  {nome:"Coreaú", cidade:"Coreaú", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Coreaú, Ceará", lat:-3.5539893, lng:-40.6547664},
+  {nome:"Crateús", cidade:"Crateús", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Crateús, Ceará", lat:-5.1678, lng:-40.6775},
+  {nome:"Crato", cidade:"Crato", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Crato, Ceará", lat:-7.2335, lng:-39.411},
+  {nome:"Cruz", cidade:"Cruz", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Cruz, Ceará", lat:-2.918, lng:-40.176},
+  {nome:"Eusébio", cidade:"Eusébio", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Eusébio, Ceará", lat:-3.8900073, lng:-38.4516218},
+  {nome:"Farias Brito", cidade:"Farias Brito", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Farias Brito, Ceará", lat:-6.9340304, lng:-39.5676213},
+  {nome:"Fortaleza", cidade:"Fortaleza", tipo:"Capital / Distritais / Especializadas / DHPP", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Fortaleza, Ceará", lat:-3.735, lng:-38.54},
+  {nome:"Granja", cidade:"Granja", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Granja, Ceará", lat:-3.1170272, lng:-40.8311124},
+  {nome:"Guaiúba", cidade:"Guaiúba", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Guaiúba, Ceará", lat:-4.0465337, lng:-38.6373292},
+  {nome:"Guaraciaba do Norte", cidade:"Guaraciaba do Norte", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Guaraciaba do Norte, Ceará", lat:-4.1682347, lng:-40.7528907},
+  {nome:"Guaramiranga", cidade:"Guaramiranga", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Guaramiranga, Ceará", lat:-4.2614545, lng:-38.9367235},
+  {nome:"Horizonte", cidade:"Horizonte", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Horizonte, Ceará", lat:-4.0982723, lng:-38.500164},
+  {nome:"Icapuí", cidade:"Icapuí", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Icapuí, Ceará", lat:-4.7124762, lng:-37.353317},
+  {nome:"Icó", cidade:"Icó", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Icó, Ceará", lat:-6.401, lng:-38.862},
+  {nome:"Iguatu", cidade:"Iguatu", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Iguatu, Ceará", lat:-6.3595, lng:-39.299},
+  {nome:"Independência", cidade:"Independência", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Independência, Ceará", lat:-5.394282, lng:-40.3152772},
+  {nome:"Ipaumirim", cidade:"Ipaumirim", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Ipaumirim, Ceará", lat:-6.7876637, lng:-38.719339},
+  {nome:"Ipu", cidade:"Ipu", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Ipu, Ceará", lat:-4.3230896, lng:-40.7118961},
+  {nome:"Ipueiras", cidade:"Ipueiras", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Ipueiras, Ceará", lat:-4.5417487, lng:-40.7129826},
+  {nome:"Iracema", cidade:"Iracema", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Iracema, Ceará", lat:-5.8088802, lng:-38.30376311},
+  {nome:"Itaitinga", cidade:"Itaitinga", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Itaitinga, Ceará", lat:-3.976093, lng:-38.5299932},
+  {nome:"Itapajé", cidade:"Itapajé", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Itapajé, Ceará", lat:-3.6886838, lng:-39.5838261},
+  {nome:"Itapipoca", cidade:"Itapipoca", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Itapipoca, Ceará", lat:-3.4939, lng:-39.5783},
+  {nome:"Itarema", cidade:"Itarema", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Itarema, Ceará", lat:-2.9214345, lng:-39.9242627},
+  {nome:"Jaguaretama", cidade:"Jaguaretama", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Jaguaretama, Ceará", lat:-5.6111014, lng:-38.76080647},
+  {nome:"Jaguaribe", cidade:"Jaguaribe", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Jaguaribe, Ceará", lat:-5.89, lng:-38.622},
+  {nome:"Jaguaruana", cidade:"Jaguaruana", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Jaguaruana, Ceará", lat:-4.8286383, lng:-37.7808163},
+  {nome:"Jardim", cidade:"Jardim", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Jardim, Ceará", lat:-7.581612, lng:-39.2818556},
+  {nome:"Jijoca de Jericoacoara", cidade:"Jijoca de Jericoacoara", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Jijoca de Jericoacoara, Ceará", lat:-2.9004134, lng:-40.454156},
+  {nome:"Juazeiro do Norte", cidade:"Juazeiro do Norte", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Juazeiro do Norte, Ceará", lat:-7.2165, lng:-39.337},
+  {nome:"Jucás", cidade:"Jucás", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Jucás, Ceará", lat:-6.515, lng:-39.527},
+  {nome:"Lavras da Mangabeira", cidade:"Lavras da Mangabeira", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Lavras da Mangabeira, Ceará", lat:-6.754, lng:-38.964},
+  {nome:"Limoeiro do Norte", cidade:"Limoeiro do Norte", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Limoeiro do Norte, Ceará", lat:-5.1456, lng:-38.085},
+  {nome:"Maracanaú", cidade:"Maracanaú", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Maracanaú, Ceará", lat:-3.876, lng:-38.625},
+  {nome:"Maranguape", cidade:"Maranguape", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Maranguape, Ceará", lat:-3.891746, lng:-38.6856459},
+  {nome:"Marco", cidade:"Marco", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Marco, Ceará", lat:-3.1203566, lng:-40.146456},
+  {nome:"Massapê", cidade:"Massapê", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Massapê, Ceará", lat:-3.523, lng:-40.342},
+  {nome:"Mauriti", cidade:"Mauriti", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Mauriti, Ceará", lat:-7.389, lng:-38.77},
+  {nome:"Milagres", cidade:"Milagres", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Milagres, Ceará", lat:-7.313, lng:-38.941},
+  {nome:"Missão Velha", cidade:"Missão Velha", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Missão Velha, Ceará", lat:-7.249, lng:-39.143},
+  {nome:"Mombaça", cidade:"Mombaça", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Mombaça, Ceará", lat:-5.743, lng:-39.627},
+  {nome:"Morada Nova", cidade:"Morada Nova", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Morada Nova, Ceará", lat:-5.107, lng:-38.372},
+  {nome:"Nova Russas", cidade:"Nova Russas", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Nova Russas, Ceará", lat:-4.706, lng:-40.563},
+  {nome:"Novo Oriente", cidade:"Novo Oriente", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Novo Oriente, Ceará", lat:-5.534, lng:-40.774},
+  {nome:"Orós", cidade:"Orós", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Orós, Ceará", lat:-6.244, lng:-38.914},
+  {nome:"Pacajus", cidade:"Pacajus", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Pacajus, Ceará", lat:-4.1739517, lng:-38.4637521},
+  {nome:"Pacatuba", cidade:"Pacatuba", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Pacatuba, Ceará", lat:-3.986, lng:-38.62},
+  {nome:"Pacujá", cidade:"Pacujá", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Pacujá, Ceará", lat:-3.983, lng:-40.699},
+  {nome:"Paracuru", cidade:"Paracuru", tipo:"Metropolitana + Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Paracuru, Ceará", lat:-3.4144, lng:-39.03},
+  {nome:"Paraipaba", cidade:"Paraipaba", tipo:"Metropolitana + Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Paraipaba, Ceará", lat:-3.437, lng:-39.148},
+  {nome:"Parambu", cidade:"Parambu", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Parambu, Ceará", lat:-6.211, lng:-40.694},
+  {nome:"Pedra Branca", cidade:"Pedra Branca", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Pedra Branca, Ceará", lat:-5.454, lng:-39.717},
+  {nome:"Penaforte", cidade:"Penaforte", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Penaforte, Ceará", lat:-7.821, lng:-39.071},
+  {nome:"Pentecoste", cidade:"Pentecoste", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Pentecoste, Ceará", lat:-3.792, lng:-39.27},
+  {nome:"Pindoretama", cidade:"Pindoretama", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Pindoretama, Ceará", lat:-4.0355232, lng:-38.3005024},
+  {nome:"Quixadá", cidade:"Quixadá", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Quixadá, Ceará", lat:-4.97, lng:-39.015},
+  {nome:"Quixeramobim", cidade:"Quixeramobim", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Quixeramobim, Ceará", lat:-5.199, lng:-39.292},
+  {nome:"Redenção", cidade:"Redenção", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Redenção, Ceará", lat:-4.225, lng:-38.73},
+  {nome:"Russas", cidade:"Russas", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Russas, Ceará", lat:-4.9408, lng:-37.9756},
+  {nome:"Saboeiro", cidade:"Saboeiro", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Saboeiro, Ceará", lat:-6.535, lng:-39.902},
+  {nome:"Santa Quitéria", cidade:"Santa Quitéria", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Santa Quitéria, Ceará", lat:-4.331, lng:-40.156},
+  {nome:"Santana do Acaraú", cidade:"Santana do Acaraú", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Santana do Acaraú, Ceará", lat:-3.461, lng:-40.212},
+  {nome:"Senador Pompeu", cidade:"Senador Pompeu", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Senador Pompeu, Ceará", lat:-5.588, lng:-39.371},
+  {nome:"Sobral", cidade:"Sobral", tipo:"Regional + Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Sobral, Ceará", lat:-3.689, lng:-40.348},
+  {nome:"Solonópole", cidade:"Solonópole", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Solonópole, Ceará", lat:-5.718, lng:-39.01},
+  {nome:"São Benedito", cidade:"São Benedito", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"São Benedito, Ceará", lat:-4.047, lng:-40.859},
+  {nome:"São Gonçalo do Amarante", cidade:"São Gonçalo do Amarante", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"São Gonçalo do Amarante, Ceará", lat:-3.6124144, lng:-38.9630362},
+  {nome:"São João do Jaguaribe", cidade:"São João do Jaguaribe", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"São João do Jaguaribe, Ceará", lat:-5.275, lng:-38.269},
+  {nome:"São Luís do Curu", cidade:"São Luís do Curu", tipo:"Metropolitana", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"São Luís do Curu, Ceará", lat:-3.6698, lng:-39.239},
+  {nome:"Tabuleiro do Norte", cidade:"Tabuleiro do Norte", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Tabuleiro do Norte, Ceará", lat:-5.243, lng:-38.129},
+  {nome:"Tamboril", cidade:"Tamboril", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Tamboril, Ceará", lat:-4.832, lng:-40.32},
+  {nome:"Tauá", cidade:"Tauá", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Tauá, Ceará", lat:-6.003, lng:-40.292},
+  {nome:"Tianguá", cidade:"Tianguá", tipo:"Regional", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Tianguá, Ceará", lat:-3.7322, lng:-40.9922},
+  {nome:"Trairi", cidade:"Trairi", tipo:"Metropolitana + Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Trairi, Ceará", lat:-3.277, lng:-39.268},
+  {nome:"Ubajara", cidade:"Ubajara", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Ubajara, Ceará", lat:-3.854, lng:-40.92},
+  {nome:"Uruburetama", cidade:"Uruburetama", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Uruburetama, Ceará", lat:-3.624, lng:-39.51},
+  {nome:"Uruoca", cidade:"Uruoca", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Uruoca, Ceará", lat:-3.313, lng:-40.562},
+  {nome:"Varjota", cidade:"Varjota", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Varjota, Ceará", lat:-4.194, lng:-40.476},
+  {nome:"Viçosa do Ceará", cidade:"Viçosa do Ceará", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Viçosa do Ceará, Ceará", lat:-3.567, lng:-41.092},
+  {nome:"Várzea Alegre", cidade:"Várzea Alegre", tipo:"Municipal", end:"Município com unidade da Polícia Civil do Estado do Ceará", cep:"", tel:"", email:"", q:"Várzea Alegre, Ceará", lat:-6.789, lng:-39.295}
+];
+
+const $ = id => document.getElementById(id);
+const stage=$('stage'), vp=$('vp'), layer=$('layer'), tip=$('tip');
+
+/* projeção simples: graus -> unidades do mapa (Ceará cabe em ~450 x 540) */
+const P = (lng,lat) => [(lng+41.6)*99.6, (-2.6-lat)*100];
+const aneis = g => g.type==='FeatureCollection' ? g.features.flatMap(f=>aneis(f.geometry))
+             : g.type==='Feature' ? aneis(g.geometry)
+             : g.type==='Polygon' ? g.coordinates
+             : g.type==='MultiPolygon' ? g.coordinates.flat() : [];
+const caminho = geo => aneis(geo).map(r=>'M'+r.map(([lo,la])=>P(lo,la).map(v=>v.toFixed(3)).join(',')).join('L')+'Z').join('');
+
+/* contorno simplificado (aparece na hora); o contorno oficial do IBGE o substitui se a rede permitir */
+const SIMPLES = {type:'Polygon',coordinates:[[
+  [-41.40,-2.93],[-40.85,-2.90],[-40.50,-2.79],[-40.12,-2.89],[-39.92,-2.95],[-39.50,-3.05],[-39.27,-3.25],[-39.03,-3.40],
+  [-38.65,-3.70],[-38.50,-3.72],[-38.28,-3.90],[-38.12,-4.15],[-37.80,-4.45],[-37.60,-4.55],[-37.25,-4.70],
+  [-37.40,-5.00],[-37.75,-5.30],[-38.10,-5.65],[-38.40,-6.10],[-38.55,-6.55],[-38.70,-6.95],[-38.90,-7.45],[-38.95,-7.85],
+  [-39.50,-7.70],[-39.90,-7.60],[-40.60,-7.38],[-40.95,-7.35],[-41.15,-7.00],[-41.30,-6.45],[-41.40,-5.95],[-41.25,-5.45],
+  [-41.10,-5.00],[-41.20,-4.50],[-41.40,-4.00],[-41.35,-3.50],[-41.30,-3.15]
+]]};
+$('ceara').setAttribute('d',caminho(SIMPLES));
+(async()=>{
+  try{
+    const c=new AbortController(); setTimeout(()=>c.abort(),6000);
+    const r=await fetch('https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=intermediaria',{signal:c.signal});
+    if(!r.ok) throw 0;
+    $('ceara').setAttribute('d',caminho(await r.json()));
+  }catch(e){}
+})();
+
+/* municípios (IBGE): contornos + nomes */
+const muns=[];
+(async()=>{
+  const st=$('status');
+  try{
+    const c=new AbortController(); setTimeout(()=>c.abort(),45000);
+    const [g,n]=await Promise.all([
+      fetch('https://servicodados.ibge.gov.br/api/v3/malhas/estados/23?formato=application/vnd.geo+json&qualidade=intermediaria&intrarregiao=municipio',{signal:c.signal})
+        .then(r=>{if(!r.ok)throw 0;return r.json();}),
+      fetch('https://servicodados.ibge.gov.br/api/v1/localidades/estados/23/municipios',{signal:c.signal})
+        .then(r=>r.ok?r.json():[]).catch(()=>[])
+    ]);
+    const nomes={}; n.forEach(m=>nomes[m.id]=m.nome);
+    const gm=$('muns');
+    g.features.forEach(f=>{
+      const rs=aneis(f.geometry).map(r=>r.map(([lo,la])=>P(lo,la)));
+      let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9,cen=null,amax=0;
+      rs.forEach(r=>{
+        let a=0,cx=0,cy=0;
+        for(let i=0;i<r.length;i++){
+          const [xa,ya]=r[i],[xb,yb]=r[(i+1)%r.length],k=xa*yb-xb*ya;
+          a+=k; cx+=(xa+xb)*k; cy+=(ya+yb)*k;
+          x0=Math.min(x0,xa); x1=Math.max(x1,xa); y0=Math.min(y0,ya); y1=Math.max(y1,ya);
+        }
+        a/=2; if(a && Math.abs(a)>amax){amax=Math.abs(a); cen=[cx/(6*a),cy/(6*a)];}
+      });
+      const el=document.createElementNS('http://www.w3.org/2000/svg','path');
+      el.setAttribute('class','mun'); el.setAttribute('d',caminho(f.geometry)); el.dataset.i=muns.length;
+      gm.appendChild(el);
+      muns.push({nome:nomes[String(f.properties.codarea)]||'',bb:[x0,y0,x1,y1],c:cen||[(x0+x1)/2,(y0+y1)/2]});
+    });
+    st.style.display='none'; render();
+  }catch(e){
+    st.textContent='Não foi possível carregar os municípios (verifique a conexão com a internet).';
+    setTimeout(()=>st.style.display='none',8000);
+  }
+})();
+$('muns').addEventListener('mousemove',e=>{
+  const m=muns[e.target.dataset.i]; if(!m||!m.nome||ptrs.size) return;
+  tip.textContent=m.nome; tip.style.left=e.clientX+'px'; tip.style.top=e.clientY+'px'; tip.style.display='block';
+});
+$('muns').addEventListener('mouseleave',()=>tip.style.display='none');
+
+/* câmera */
+let view={s:1,x:0,y:0}, FIT=1, ativo=null, arrastou=false;
+function fit(){
+  const w=stage.clientWidth,h=stage.clientHeight;
+  FIT=Math.min(w/450,h/540)*.92; view={s:FIT,x:(w-450*FIT)/2,y:(h-540*FIT)/2}; render();
+}
+function zoomAt(px,py,f){
+  const s=Math.min(FIT*600,Math.max(FIT*.8,view.s*f)); f=s/view.s;
+  view.x=px-(px-view.x)*f; view.y=py-(py-view.y)*f; view.s=s; render();
+}
+function animar(alvo){
+  const a={...view},t0=performance.now();
+  (function p(t){const k=Math.min(1,(t-t0)/280),e=1-(1-k)**3;
+    view.s=a.s*Math.pow(alvo.s/a.s,e); view.x=a.x+(alvo.x-a.x)*e; view.y=a.y+(alvo.y-a.y)*e; render();
+    if(k<1) requestAnimationFrame(p);})(t0);
+}
+
+/* marcadores e grupos (agrupa os que ficam a menos de ~46px na tela) */
+function render(){
+  vp.setAttribute('transform',`translate(${view.x} ${view.y}) scale(${view.s})`);
+  layer.innerHTML=''; tip.style.display='none';
+  const W=stage.clientWidth,H=stage.clientHeight;
+  muns.forEach(m=>{
+    if(!m.nome || (m.bb[2]-m.bb[0])*view.s < m.nome.length*6.5+24) return;
+    const sx=m.c[0]*view.s+view.x, sy=m.c[1]*view.s+view.y;
+    if(sx<-60||sy<-20||sx>W+60||sy>H+20) return;
+    const l=document.createElement('div'); l.className='lbl'; l.textContent=m.nome;
+    l.style.left=sx+'px'; l.style.top=sy+'px'; layer.appendChild(l);
+  });
+  const grupos=[];
+  delegacias.forEach(d=>{
+    const [wx,wy]=P(d.lng,d.lat); d._w=[wx,wy]; d._sx=wx*view.s+view.x; d._sy=wy*view.s+view.y;
+    const g=grupos.find(g=>Math.hypot(g.cx-d._sx,g.cy-d._sy)<44);
+    if(g){g.push(d); g.cx=g.reduce((a,x)=>a+x._sx,0)/g.length; g.cy=g.reduce((a,x)=>a+x._sy,0)/g.length;}
+    else{const n=[d]; n.cx=d._sx; n.cy=d._sy; grupos.push(n);}
+  });
+  const singles=[];
+  grupos.forEach(g=>{
+    const el=document.createElement('div');
+    if(g.length===1){
+      const d=g[0]; singles.push(d); el.className='pin'+(d===ativo?' on':'');
+      el.style.left=d._sx+'px'; el.style.top=d._sy+'px';
+      el.onmouseenter=()=>{if(d._lbl) return; tip.innerHTML=`${d.nome}<br>${d.cidade}${d.end?'':' · provisório'}`;
+        tip.style.left=d._sx+'px'; tip.style.top=d._sy+'px'; tip.style.display='block';};
+      el.onmouseleave=()=>tip.style.display='none';
+      el.onclick=e=>{e.stopPropagation();abrir(d);};
+    }else{
+      const sx=g.reduce((a,d)=>a+d._sx,0)/g.length, sy=g.reduce((a,d)=>a+d._sy,0)/g.length;
+      const wx=g.reduce((a,d)=>a+d._w[0],0)/g.length, wy=g.reduce((a,d)=>a+d._w[1],0)/g.length;
+      el.className='cl'; el.innerHTML='<b>'+g.length+'</b>'; el.style.left=sx+'px'; el.style.top=sy+'px';
+      el.onclick=e=>{e.stopPropagation();
+        const maxS=FIT*600;
+        if(view.s>=maxS*.995){
+          abrir(g[0]);
+          return;
+        }
+        const s=Math.min(maxS,view.s*3);
+        animar({s,x:stage.clientWidth/2-wx*s,y:stage.clientHeight/2-wy*s});};
+    }
+    layer.appendChild(el);
+  });
+  /* nome da delegacia acima do brasão, quando há zoom suficiente e espaço livre */
+  singles.forEach(d=>d._lbl=false);
+  if(view.s>=FIT*5){
+    const usados=singles.map(d=>[d._sx-17,d._sy-21,d._sx+17,d._sy+20]);
+    singles.forEach(d=>{
+      const n=d.nome.length*6.4, w=Math.min(150,n+14), h=Math.ceil(n/136)*14+8;
+      const r=[d._sx-w/2,d._sy-26-h,d._sx+w/2,d._sy-26];
+      if(r[2]<0||r[0]>W||r[3]<0||r[1]>H) return;
+      if(usados.some(u=>r[0]<u[2]&&r[2]>u[0]&&r[1]<u[3]&&r[3]>u[1])) return;
+      usados.push(r); d._lbl=true;
+      const l=document.createElement('div'); l.className='dlbl'; l.textContent=d.nome;
+      l.style.left=d._sx+'px'; l.style.top=(d._sy-26)+'px'; layer.appendChild(l);
+    });
+  }
+}
+
+/* arrastar, rolar e pinça */
+const ptrs=new Map(); let ult=0, ini=null;
+stage.addEventListener('pointerdown',e=>{
+  if(e.target.closest('.pin,.cl,#zoom')) return;
+  stage.setPointerCapture(e.pointerId); ptrs.set(e.pointerId,{x:e.clientX,y:e.clientY}); arrastou=false;
+  if(ptrs.size===2){const [a,b]=[...ptrs.values()]; ult=Math.hypot(a.x-b.x,a.y-b.y);}
+});
+stage.addEventListener('pointermove',e=>{
+  const q=ptrs.get(e.pointerId); if(!q) return;
+  const dx=e.clientX-q.x, dy=e.clientY-q.y;
+  if(ptrs.size===1){ if(Math.abs(dx)+Math.abs(dy)>3) arrastou=true; view.x+=dx; view.y+=dy; q.x=e.clientX; q.y=e.clientY; stage.classList.add('arrasto'); render(); }
+  else{ q.x=e.clientX; q.y=e.clientY; const [a,b]=[...ptrs.values()], d=Math.hypot(a.x-b.x,a.y-b.y); arrastou=true;
+    if(ult) zoomAt((a.x+b.x)/2,(a.y+b.y)/2,d/ult); ult=d; }
+});
+const soltar=e=>{ptrs.delete(e.pointerId); ult=0; stage.classList.remove('arrasto');};
+stage.addEventListener('pointerup',soltar); stage.addEventListener('pointercancel',soltar);
+
+stage.addEventListener('click',e=>{ if(!arrastou && !e.target.closest('.pin,.cl,#zoom')) fechar(); arrastou=false; });
+$('mais').onclick=()=>zoomAt(stage.clientWidth/2,stage.clientHeight/2,1.6);
+$('menos').onclick=()=>zoomAt(stage.clientWidth/2,stage.clientHeight/2,1/1.6);
+window.addEventListener('resize',fit);
+
+/* painel com prévia do Google Maps */
+function abrir(d){
+  window.__cidadeSelecionada=d;
+  const city=document.getElementById('detailCity');
+  const type=document.getElementById('detailType');
+  const info=document.getElementById('detailInfo');
+  const btn=document.getElementById('interestBtn');
+  if(city) city.textContent=d.cidade;
+  if(type) type.textContent=d.tipo||'Unidade da Polícia Civil';
+  if(info) info.textContent=d.end||'Município com unidade da Polícia Civil do Estado do Ceará';
+  if(btn){
+    btn.classList.remove('selected');
+    btn.textContent='Tenho interesse';
+    btn.disabled=false;
+  }
+  document.body.classList.add('detail-open');
+}
+function fechar(){
+  if(!ativo && $('previa').style.display!=='block') return;
+  ativo=null; $('previa').style.display='none'; $('pFrame').src='about:blank'; render();
+}
+$('fechar').onclick=fechar;
+fit();
+
+
+
+</script>
+
+
+<aside class="pcce-ranking" id="rankingPanel" aria-live="polite" aria-label="Ranking das cidades mais escolhidas">
+  <div class="pcce-ranking-title">CIDADES MAIS ESCOLHIDAS</div>
+  <div class="pcce-ranking-list" id="rankingList">
+    <div class="pcce-ranking-empty">Carregando ranking...</div>
+  </div>
+  <div class="pcce-ranking-total" id="rankingTotal"></div>
+  <button type="button" class="pcce-ranking-all" id="pcceAllChoicesButton">VER TODAS AS ESCOLHAS</button>
+
+</aside>
+
+
+<div class="pcce-info-overlay" id="pcceStepModal" aria-hidden="true">
+  <div class="pcce-info-card pcce-step-card" role="dialog" aria-modal="true" aria-labelledby="pcceStepTitle">
+    <div class="pcce-info-kicker">ORIENTAÇÕES</div>
+    <h2 id="pcceStepTitle">PASSO A PASSO</h2>
+    <p><strong>Atenção:</strong> esse site não é oficial e serve apenas para mensurar e facilitar a organização da lotação dos novos servidores da Polícia Civil do Ceará.</p>
+    <div class="pcce-howto">
+      <strong>Como escolher:</strong>
+      <ol>
+        <li>Pesquise a cidade em que deseja trabalhar, selecione-a e clique em <strong>“Tenho interesse”</strong>.</li>
+        <li>Digite sua matrícula e confirme.</li>
+        <li>Sua matrícula só deve ser utilizada <strong>UMA ÚNICA VEZ</strong>.</li>
+      </ol>
+    </div>
+    <button type="button" class="pcce-aware-button" id="pcceAwareButton">ESTOU CIENTE</button>
+  </div>
+</div>
+
+<div class="pcce-info-overlay" id="pcceAllChoicesModal" aria-hidden="true">
+  <div class="pcce-info-card pcce-ranking-card" role="dialog" aria-modal="true" aria-labelledby="pcceAllTitle">
+    <button type="button" class="pcce-modal-close" data-close-overlay="pcceAllChoicesModal" aria-label="Fechar">×</button>
+    <div class="pcce-info-kicker">RANKING COMPLETO</div>
+    <h2 id="pcceAllTitle">TODAS AS ESCOLHAS</h2>
+    <p class="pcce-modal-intro">Todas as cidades que receberam escolhas, ordenadas pela quantidade de servidores interessados.</p>
+    <div class="pcce-full-ranking" id="pcceFullRanking"><div class="pcce-modal-loading">Carregando...</div></div>
+  </div>
+</div>
+
+<aside id="detailPanel" aria-live="polite" aria-label="Informações da cidade selecionada">
+  <button class="detail-close" id="detailClose" aria-label="Fechar">×</button>
+  <div class="detail-eyebrow">Cidade selecionada</div>
+  <div class="detail-city" id="detailCity">Selecione uma cidade</div>
+  <div class="detail-rule"></div>
+  <div class="detail-label">Classificação da unidade</div>
+  <div class="detail-value" id="detailType">—</div>
+  <div class="detail-label">Polícia Civil do Ceará</div>
+  <div class="detail-value" id="detailInfo">—</div>
+  <div class="detail-note">O mapa apresenta um único brasão por município. A cidade pode possuir mais de uma unidade policial.</div>
+  <button class="interest-btn" id="interestBtn" type="button">Tenho interesse</button>
+</aside>
+
+
+<div id="matriculaModal" role="dialog" aria-modal="true" aria-labelledby="matriculaTitle">
+  <div class="matricula-card">
+    <div class="matricula-kicker">Manifestação de interesse</div>
+    <div class="matricula-title" id="matriculaTitle">Informe sua matrícula</div>
+    <div class="matricula-city" id="matriculaCity">Cidade selecionada</div>
+
+    <label class="matricula-label" for="matriculaInput">Número da matrícula</label>
+    <input id="matriculaInput" type="text" inputmode="numeric" autocomplete="off"
+           placeholder="Digite sua matrícula" maxlength="30">
+    <div class="matricula-help">A matrícula será associada à cidade selecionada para registrar o interesse.</div>
+    <div class="matricula-error" id="matriculaError"></div>
+
+    <div class="matricula-actions">
+      <button id="matriculaCancel" type="button">Cancelar</button>
+      <button id="matriculaConfirm" type="button">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const detailClose = document.getElementById('detailClose');
+  const interestBtn = document.getElementById('interestBtn');
+  const modal = document.getElementById('matriculaModal');
+  const input = document.getElementById('matriculaInput');
+  const modalCity = document.getElementById('matriculaCity');
+  const error = document.getElementById('matriculaError');
+  const cancel = document.getElementById('matriculaCancel');
+  const confirm = document.getElementById('matriculaConfirm');
+
+  function fecharModalMatricula(){
+    document.body.classList.remove('pcce-matricula-open');
+    if (!modal) return;
+    modal.classList.remove('open');
+    if (error) error.textContent = '';
+  }
+
+  function abrirModalMatricula(){
+    document.body.classList.add('pcce-matricula-open');
+    const d = window.__cidadeSelecionada;
+    if (!d || !modal || !input) return;
+    if (modalCity) modalCity.textContent = 'Interesse em ' + d.cidade;
+    input.value = '';
+    if (error) error.textContent = '';
+    modal.classList.add('open');
+    window.setTimeout(function(){ input.focus(); }, 80);
+  }
+
+  if (detailClose) {
+    detailClose.addEventListener('click', function(){
+      document.body.classList.remove('detail-open');
+    });
+  }
+
+  if (interestBtn) {
+    interestBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      abrirModalMatricula();
+    });
+  }
+
+  if (cancel) cancel.addEventListener('click', fecharModalMatricula);
+
+  if (modal) {
+    modal.addEventListener('click', function(e){
+      if (e.target === modal) fecharModalMatricula();
+    });
+  }
+
+  async function confirmarInteresse(){
+    const d = window.__cidadeSelecionada;
+    if (!d || !input || !confirm) return;
+
+    const matricula = input.value.trim();
+
+    if (!matricula) {
+      if (error) error.textContent = 'Informe o número da matrícula para continuar.';
+      input.focus();
+      return;
+    }
+
+    confirm.disabled = true;
+    confirm.textContent = 'Registrando...';
+    if (error) error.textContent = '';
+
+    try {
+      const resposta = await fetch('/api/escolhas', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({matricula: matricula, cidade: d.cidade})
+      });
+
+      const dados = await resposta.json().catch(()=>({}));
+
+      if (!resposta.ok) {
+        if (resposta.status === 409) {
+          throw new Error('Esta matrícula já registrou uma escolha e não pode ser utilizada novamente.');
+        }
+        throw new Error(dados.erro || 'Não foi possível registrar a escolha.');
+      }
+
+      if (interestBtn) {
+        interestBtn.classList.add('selected');
+        interestBtn.textContent = 'Interesse registrado';
+      }
+
+      fecharModalMatricula();
+      if (typeof window.atualizarRankingPCCE === 'function') {
+        window.atualizarRankingPCCE();
+      }
+    } catch (falha) {
+      if (error) error.textContent = falha.message || 'Erro de comunicação com o servidor.';
+    } finally {
+      confirm.disabled = false;
+      confirm.textContent = 'Confirmar';
+    }
+  }
+
+  if (confirm) confirm.addEventListener('click', confirmarInteresse);
+
+  if (input) {
+    input.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') confirmarInteresse();
+      if (e.key === 'Escape') fecharModalMatricula();
+    });
+  }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  function atualizarAlturaCabecalho(){
+    const hero=document.querySelector('.pcce-hero');
+    if(!hero) return;
+    document.documentElement.style.setProperty('--pcce-header-height', hero.offsetHeight+'px');
+  }
+  atualizarAlturaCabecalho();
+  window.addEventListener('resize', atualizarAlturaCabecalho);
+});
+</script>
+
+
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const searchInput=document.getElementById('citySearch');
+  const results=document.getElementById('citySearchResults');
+  const clearBtn=document.getElementById('citySearchClear');
+  const wrap=document.getElementById('citySearchWrap');
+  const mapStage=document.getElementById('stage');
+  if(!searchInput || !results || typeof delegacias==='undefined') return;
+
+  let activeIndex=-1;
+  let current=[];
+
+  function normalizar(s){
+    return String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+  }
+
+  const cidades=[...delegacias].sort((a,b)=>a.cidade.localeCompare(b.cidade,'pt-BR'));
+
+  function fecharResultados(){
+    results.classList.remove('open');
+    activeIndex=-1;
+  }
+
+  function renderResultados(){
+    const termo=normalizar(searchInput.value);
+    clearBtn.classList.toggle('visible',!!termo);
+
+    current=termo
+      ? cidades.filter(d=>normalizar(d.cidade).includes(termo))
+      : cidades.slice(0,8);
+
+    if(termo){
+      current.sort((a,b)=>{
+        const aa=normalizar(a.cidade),bb=normalizar(b.cidade);
+        return (aa.startsWith(termo)?0:1)-(bb.startsWith(termo)?0:1)
+          || a.cidade.localeCompare(b.cidade,'pt-BR');
+      });
+    }
+
+    activeIndex=-1;
+    results.innerHTML='';
+
+    if(!current.length){
+      const empty=document.createElement('div');
+      empty.className='city-no-result';
+      empty.textContent='Nenhuma cidade com unidade da PCCE encontrada.';
+      results.appendChild(empty);
+      results.classList.add('open');
+      return;
+    }
+
+    current.slice(0,10).forEach((d)=>{
+      const btn=document.createElement('button');
+      btn.type='button';
+      btn.className='city-result';
+      btn.innerHTML='<span class="city-result-name"></span><span class="city-result-type"></span>';
+      btn.querySelector('.city-result-name').textContent=d.cidade;
+      btn.querySelector('.city-result-type').textContent=d.tipo||'Unidade PCCE';
+      btn.addEventListener('click',()=>localizarNoMapa(d));
+      results.appendChild(btn);
+    });
+    results.classList.add('open');
+  }
+
+  function destacarAtivo(){
+    const opts=[...results.querySelectorAll('.city-result')];
+    opts.forEach((el,i)=>el.classList.toggle('active',i===activeIndex));
+    if(activeIndex>=0 && opts[activeIndex]) opts[activeIndex].scrollIntoView({block:'nearest'});
+  }
+
+  function destacarBrasao(d){
+    document.querySelectorAll('.pcce-search-highlight').forEach(el=>el.remove());
+
+    try{
+      /*
+       * IMPORTANTE:
+       * render() já calcula d._sx e d._sy usando exatamente:
+       *   _sx = P(lng,lat)[0] * view.s + view.x
+       *   _sy = P(lng,lat)[1] * view.s + view.y
+       * Portanto o destaque deve usar essas coordenadas de TELA,
+       * e não P(lng,lat), que são coordenadas internas do mapa.
+       */
+      render();
+
+      const sx=d._sx;
+      const sy=d._sy;
+      if(!Number.isFinite(sx) || !Number.isFinite(sy)) return;
+
+      const layer=document.getElementById('layer');
+      if(!layer) return;
+
+      const marker=document.createElement('div');
+      marker.className='pcce-search-highlight';
+      marker.style.left=sx+'px';
+      marker.style.top=sy+'px';
+
+      const label=document.createElement('div');
+      label.className='pcce-search-highlight-label';
+      label.textContent=d.cidade;
+      marker.appendChild(label);
+
+      /* layer é o mesmo contêiner HTML usado pelos brasões reais. */
+      layer.appendChild(marker);
+
+      window.setTimeout(()=>marker.remove(),5500);
+    }catch(e){}
+  }
+
+  function localizarNoMapa(d){
+    searchInput.value=d.cidade;
+    clearBtn.classList.add('visible');
+    fecharResultados();
+
+    /* Fecha eventual seleção anterior: a pesquisa apenas localiza, não seleciona. */
+    document.body.classList.remove('detail-open');
+
+    /* Centraliza a cidade no mapa. */
+    try{
+      if(typeof P==='function' && typeof animar==='function' && typeof FIT!=='undefined' && typeof stage!=='undefined'){
+        const p=P(d.lng,d.lat);
+        const s=Math.max((typeof view!=='undefined' && view.s ? view.s : FIT),FIT*3.15);
+        animar({
+          s:s,
+          x:stage.clientWidth/2-p[0]*s,
+          y:stage.clientHeight/2-p[1]*s
+        });
+      }
+    }catch(e){}
+
+    /* Leva a pessoa até a área do mapa e sinaliza onde clicar. */
+    if(mapStage){
+      mapStage.scrollIntoView({behavior:'smooth',block:'start'});
+    }
+    setTimeout(()=>destacarBrasao(d),340);
+  }
+
+  searchInput.addEventListener('focus',renderResultados);
+  searchInput.addEventListener('input',renderResultados);
+
+  searchInput.addEventListener('keydown',function(e){
+    const opts=[...results.querySelectorAll('.city-result')];
+    if(e.key==='ArrowDown'){
+      e.preventDefault();
+      if(!results.classList.contains('open')) renderResultados();
+      activeIndex=Math.min(activeIndex+1,opts.length-1);
+      destacarAtivo();
+    }else if(e.key==='ArrowUp'){
+      e.preventDefault();
+      activeIndex=Math.max(activeIndex-1,0);
+      destacarAtivo();
+    }else if(e.key==='Enter'){
+      const visiveis=current.slice(0,10);
+      if(activeIndex>=0 && visiveis[activeIndex]){
+        e.preventDefault(); localizarNoMapa(visiveis[activeIndex]);
+      }else if(visiveis.length===1){
+        e.preventDefault(); localizarNoMapa(visiveis[0]);
+      }
+    }else if(e.key==='Escape'){
+      fecharResultados(); searchInput.blur();
+    }
+  });
+
+  clearBtn.addEventListener('click',function(){
+    searchInput.value='';
+    clearBtn.classList.remove('visible');
+    searchInput.focus();
+    renderResultados();
+  });
+
+  document.addEventListener('click',function(e){
+    if(!wrap.contains(e.target)) fecharResultados();
+  });
+});
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const mapaStage=document.getElementById('stage');
+  if(!mapaStage || typeof view==='undefined' || typeof FIT==='undefined') return;
+
+  /*
+   * Obtém os limites do desenho real do Ceará no SVG.
+   * Isso evita o deslocamento para a esquerda causado pelos bounds aproximados.
+   */
+  function obterBoundsCeara(){
+    const svg=mapaStage.querySelector('svg');
+    if(svg){
+      try{
+        const elementos=[...svg.querySelectorAll('path,polygon,polyline')];
+        let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+        elementos.forEach(el=>{
+          try{
+            const b=el.getBBox();
+            if(b.width>20 && b.height>20){
+              minX=Math.min(minX,b.x);
+              minY=Math.min(minY,b.y);
+              maxX=Math.max(maxX,b.x+b.width);
+              maxY=Math.max(maxY,b.y+b.height);
+            }
+          }catch(e){}
+        });
+        if(Number.isFinite(minX) && Number.isFinite(maxX) && maxX>minX && maxY>minY){
+          return {minX,minY,maxX,maxY};
+        }
+      }catch(e){}
+    }
+
+    /* Fallback somente se o navegador não disponibilizar getBBox(). */
+    return {minX:0,minY:0,maxX:600,maxY:760};
+  }
+
+  let bounds=obterBoundsCeara();
+
+  function limitarCamera(){
+    const w=mapaStage.clientWidth;
+    const h=mapaStage.clientHeight;
+    if(!w || !h) return;
+
+    view.s=Math.max(view.s,FIT);
+
+    const margemSegura=28;
+    const {minX,minY,maxX,maxY}=bounds;
+    const mapaW=(maxX-minX)*view.s;
+    const mapaH=(maxY-minY)*view.s;
+
+    /*
+     * Se o Ceará couber inteiro no viewport, ele permanece centralizado.
+     * Isso impede que um simples arrasto esconda parte do estado.
+     */
+    if(mapaW <= w-2*margemSegura){
+      view.x=(w/2)-(((minX+maxX)/2)*view.s);
+    }else{
+      /*
+       * Com zoom, o pan é permitido, mas sempre preservando uma grande
+       * área do estado na tela e evitando o fundo vazio.
+       */
+      const visivelX=Math.min(w*.82,mapaW*.82);
+      const minCameraX=visivelX-maxX*view.s;
+      const maxCameraX=w-visivelX-minX*view.s;
+      view.x=Math.min(maxCameraX,Math.max(minCameraX,view.x));
+    }
+
+    if(mapaH <= h-2*margemSegura){
+      view.y=(h/2)-(((minY+maxY)/2)*view.s);
+    }else{
+      const visivelY=Math.min(h*.84,mapaH*.84);
+      const minCameraY=visivelY-maxY*view.s;
+      const maxCameraY=h-visivelY-minY*view.s;
+      view.y=Math.min(maxCameraY,Math.max(minCameraY,view.y));
+    }
+  }
+
+  function centralizarCeara(){
+    bounds=obterBoundsCeara();
+
+    const w=mapaStage.clientWidth;
+    const h=mapaStage.clientHeight;
+    if(!w || !h) return;
+
+    const margemX=Math.max(34,w*.038);
+    const margemY=30;
+    const bw=bounds.maxX-bounds.minX;
+    const bh=bounds.maxY-bounds.minY;
+
+    const escalaX=(w-2*margemX)/bw;
+    const escalaY=(h-2*margemY)/bh;
+
+    view.s=Math.max(FIT,Math.min(escalaX,escalaY)*1.055);
+
+    /* Centro geométrico exato do desenho do Ceará. */
+    const centroX=(bounds.minX+bounds.maxX)/2;
+    const centroY=(bounds.minY+bounds.maxY)/2;
+
+    view.x=(w/2)-(centroX*view.s);
+    view.y=(h/2)-(centroY*view.s);
+
+    limitarCamera();
+    if(typeof render==='function') render();
+  }
+
+  if(typeof render==='function'){
+    const renderOriginal=render;
+    render=function(){
+      limitarCamera();
+      return renderOriginal();
+    };
+  }
+
+  
+
+  /* Espera o SVG concluir o primeiro layout antes de medir seu desenho. */
+  requestAnimationFrame(function(){
+    requestAnimationFrame(centralizarCeara);
+  });
+
+  window.addEventListener('resize',function(){
+    clearTimeout(window.__pcceCenterTimer);
+    window.__pcceCenterTimer=setTimeout(centralizarCeara,90);
+  });
+});
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const mapa=document.getElementById('stage');
+  if(!mapa || typeof view==='undefined' || typeof render!=='function') return;
+
+  /*
+   * Roda normal: rola a página.
+   * Ctrl + roda sobre o mapa: zoom mantendo o ponto sob o cursor.
+   */
+  mapa.addEventListener('wheel', function(e){
+    if(!e.ctrlKey) return;
+
+    e.preventDefault();
+
+    const rect=mapa.getBoundingClientRect();
+    const mx=e.clientX-rect.left;
+    const my=e.clientY-rect.top;
+
+    const escalaAnterior=view.s;
+    const fator=e.deltaY<0 ? 1.13 : 1/1.13;
+
+    /* Mantém limites confortáveis de zoom. */
+    const escalaMin=(typeof FIT==='number' ? FIT : 0.7);
+    const escalaMax=Math.max(escalaMin*5,5);
+    const novaEscala=Math.min(escalaMax,Math.max(escalaMin,escalaAnterior*fator));
+
+    if(novaEscala===escalaAnterior) return;
+
+    /*
+     * Converte o ponto do cursor para coordenada interna e reposiciona
+     * a câmera para que esse mesmo ponto permaneça sob o mouse.
+     */
+    const wx=(mx-view.x)/escalaAnterior;
+    const wy=(my-view.y)/escalaAnterior;
+
+    view.s=novaEscala;
+    view.x=mx-wx*novaEscala;
+    view.y=my-wy*novaEscala;
+
+    render();
+  }, {passive:false});
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const lista=document.getElementById('rankingList');
+  const total=document.getElementById('rankingTotal');
+
+  function escapar(texto){
+    return String(texto).replace(/[&<>"']/g,function(c){
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+
+  async function atualizarRanking(){
+    if(!lista) return;
+    try{
+      const resposta=await fetch('/api/ranking',{cache:'no-store'});
+      if(!resposta.ok) throw new Error();
+      const dados=await resposta.json();
+
+      if(!dados.ranking || !dados.ranking.length){
+        lista.innerHTML='<div class="pcce-ranking-empty">Ainda não há escolhas registradas.</div>';
+        if(total) total.textContent='0 escolhas';
+        return;
+      }
+
+      lista.innerHTML=dados.ranking.map(function(item,i){
+        return '<div class="pcce-ranking-row">'
+          +'<div class="pcce-ranking-pos">'+(i+1)+'º</div>'
+          +'<div class="pcce-ranking-city" title="'+escapar(item.cidade)+'">'+escapar(item.cidade)+'</div>'
+          +'<div class="pcce-ranking-count">'+item.votos+' '+(item.votos===1?'escolha':'escolhas')+'</div>'
+          +'</div>';
+      }).join('');
+
+      if(total) total.textContent=dados.total+' '+(dados.total===1?'escolha registrada':'escolhas registradas');
+    }catch(e){
+      lista.innerHTML='<div class="pcce-ranking-empty">Não foi possível carregar o ranking.</div>';
+      if(total) total.textContent='';
+    }
+  }
+
+  window.atualizarRankingPCCE=atualizarRanking;
+  atualizarRanking();
+  window.setInterval(atualizarRanking,30000);
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const modal=document.getElementById('matriculaModal');
+  if(!modal) return;
+
+  function sincronizarRankingComModal(){
+    const estilo=getComputedStyle(modal);
+    const aberto=estilo.display!=='none'
+      && estilo.visibility!=='hidden'
+      && !modal.hidden
+      && (modal.classList.contains('open') || modal.classList.contains('show') || modal.getAttribute('aria-hidden')==='false');
+    document.body.classList.toggle('pcce-matricula-open',aberto);
+  }
+
+  const obs=new MutationObserver(sincronizarRankingComModal);
+  obs.observe(modal,{attributes:true,attributeFilter:['class','style','hidden','aria-hidden']});
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  const step=document.getElementById('pcceStepModal');
+  const all=document.getElementById('pcceAllChoicesModal');
+
+  function abrir(el){
+    if(!el) return;
+    el.classList.add('open');
+    el.setAttribute('aria-hidden','false');
+    document.body.classList.add('pcce-overlay-open');
+  }
+  function fechar(el){
+    if(!el) return;
+    el.classList.remove('open');
+    el.setAttribute('aria-hidden','true');
+    if(!document.querySelector('.pcce-info-overlay.open')) document.body.classList.remove('pcce-overlay-open');
+  }
+
+  document.getElementById('pcceStepButton')?.addEventListener('click',()=>abrir(step));
+  document.getElementById('pcceAwareButton')?.addEventListener('click',()=>fechar(step));
+
+  document.querySelectorAll('[data-close-overlay]').forEach(btn=>{
+    btn.addEventListener('click',()=>fechar(document.getElementById(btn.dataset.closeOverlay)));
+  });
+  [all].forEach(el=>{
+    el?.addEventListener('click',e=>{if(e.target===el) fechar(el);});
+  });
+  document.addEventListener('keydown',e=>{
+    if(e.key==='Escape'){
+      const aberto=document.querySelector('.pcce-info-overlay.open');
+      if(aberto && aberto!==step) fechar(aberto);
+    }
+  });
+
+  document.getElementById('pcceAllChoicesButton')?.addEventListener('click',async()=>{
+    abrir(all);
+    const box=document.getElementById('pcceFullRanking');
+    box.innerHTML='<div class="pcce-modal-loading">Carregando...</div>';
+    try{
+      const r=await fetch('/api/ranking-completo',{cache:'no-store'});
+      const d=await r.json();
+      if(!r.ok) throw new Error(d.erro||'Falha');
+      if(!d.ranking.length){box.innerHTML='<div class="pcce-modal-loading">Ainda não há escolhas registradas.</div>';return;}
+      box.innerHTML=d.ranking.map((x,i)=>'<div class="pcce-full-row"><div class="pcce-full-pos">'+(i+1)+'º</div><div class="pcce-full-city">'+esc(x.cidade)+'</div><div class="pcce-full-votes">'+x.votos+' '+(x.votos===1?'escolha':'escolhas')+'</div></div>').join('');
+    }catch(e){box.innerHTML='<div class="pcce-modal-loading">Não foi possível carregar o ranking completo.</div>';}
+  });
+
+  function esc(s){const d=document.createElement('div');d.textContent=String(s??'');return d.innerHTML;}
+  function attr(s){return esc(s).replace(/"/g,'&quot;');}
+});
+</script>
+
+</body>
+</html>

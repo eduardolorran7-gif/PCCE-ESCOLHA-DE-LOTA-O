@@ -1,0 +1,12 @@
+{
+  "name": "pcce-lotacao",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mapa de escolha de lotação PCCE com matrícula única e ranking TOP 10.",
+  "scripts": {
+    "start": "node --experimental-sqlite server.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
